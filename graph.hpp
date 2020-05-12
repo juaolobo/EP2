@@ -13,11 +13,10 @@ class adjNode {
 		adjNode* prox;
 };
 
-
 class graphNode {
 	private:
+		
 	public :
-	
 		int nVizinhos;
 		string palavra;
 		adjNode* ini;
@@ -50,7 +49,9 @@ class Grafo {
 		int tamComp(string palavra);
 		int dist(string a, string b);
 		bool emCiclo(string a);
+		bool emCicloR(int source, int a, int pai, bool *visited);
 		bool emCiclo(string a, string b);
+		bool emCicloR(int source, int dest, int a, int pai, bool &b, bool *visited);
 		void show();
 };
 

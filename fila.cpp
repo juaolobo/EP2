@@ -4,6 +4,10 @@ using namespace std;
 
 nodeFila::nodeFila() : prox(nullptr) {};
 
+
+// -----------------------------------------------
+
+
 Fila::Fila() : ini(nullptr), fim(nullptr) {};
 
 
@@ -42,11 +46,4 @@ int Fila::pop() {
 	if (ini == nullptr)
 		fim = nullptr;
 	return k;
-}
-
-void Fila::print() {
-	cout << ini->pos << endl;
-	for(nodeFila* aux = ini; aux != fim; aux = aux->prox) {
-		cout << aux->pos << endl;
-	}
 }

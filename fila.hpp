@@ -22,7 +22,6 @@ class Fila {
 		void insere(int k);
 		int pop();
 		bool vazia();
-		void print();
 };
 
 #endif
